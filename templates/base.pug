@@ -1,0 +1,40 @@
+html(lang="en")
+    head 
+        title #{title}
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(type="text/css" rel="stylesheet" href="/lupobudgets.min.css")    
+        link(rel="icon" type="image/x-icon" href="/favicon.ico")
+    body 
+        nav.nav-extended.red.darken-4
+            .nav-wrapper 
+                a(href="#" class="brand-logo") Lupo Budgets
+                a(href="#" data-target="sidemenu" class="sidenav-trigger") Menu 
+                ul#nav-mobile.right.hide-on-med-and-down
+                    li 
+                        a(href="#") Logout 
+            .nav-content 
+                ul.tabs.tabs-transparent 
+                    li.tab 
+                        a(href="#") Categories
+                    li.tab 
+                        a(href="/transactions") Transactions
+        ul#sidemenu.sidenav 
+            li 
+                a(href="#") Test 
+        #root 
+            br 
+            block content
+    footer.page-footer.red.darken-4 
+        .container
+            .row 
+                .col.s12 
+                    p © 2022 Mattia Ruta | Powered by Typescript 4.8 using Express JS framework 
+    script(type="text/javascript" href="/lupobudgets.min.js")
+    script. 
+        document.addEventListener("DOMContentLoaded", function() {
+            const sidenavs = document.querySelectorAll(".sidenav");
+            console.log(sidenav);
+        })

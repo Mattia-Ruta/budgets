@@ -1,0 +1,20 @@
+extends ../base.pug
+
+block content 
+    .row 
+        form.col.s12(action="") 
+            .row 
+                .input-field.col.s3 
+                    input#name.validate(type="text", name="name", placeholder="John")
+                    label.active(for="name") First Name
+                .input-field.col.s3 
+                    input#surname.validate(type="text", name="surname", placeholder="Smith")
+                    label.active(for="surname") Surname
+            .row 
+                .input-field.col.s6 
+                    input#email(type="text", name="email", placeholder="example@domain.co.uk")
+                    label.active(for="email") Email
+                    span.helper-text This will be used to send a password reset form in case you forget!
+            .row 
+                button.input-field.btn.waves-effect.waves-light(type="submit") Submit 
+                    i.material-icons.right send 
