@@ -1,0 +1,459 @@
+[
+{
+    "model": "lupobudgets.category",
+    "pk": 1,
+    "fields": {
+        "name": "Income"
+    }
+},
+{
+    "model": "lupobudgets.category",
+    "pk": 2,
+    "fields": {
+        "name": "Entertainment + Shopping"
+    }
+},
+{
+    "model": "lupobudgets.category",
+    "pk": 3,
+    "fields": {
+        "name": "Health + Fitness"
+    }
+},
+{
+    "model": "lupobudgets.category",
+    "pk": 4,
+    "fields": {
+        "name": "Food + Dining"
+    }
+},
+{
+    "model": "lupobudgets.category",
+    "pk": 5,
+    "fields": {
+        "name": "Transport"
+    }
+},
+{
+    "model": "lupobudgets.category",
+    "pk": 6,
+    "fields": {
+        "name": "Fees + Charges"
+    }
+},
+{
+    "model": "lupobudgets.category",
+    "pk": 7,
+    "fields": {
+        "name": "Taxes"
+    }
+},
+{
+    "model": "lupobudgets.category",
+    "pk": 8,
+    "fields": {
+        "name": "Miscellaneous"
+    }
+},
+{
+    "model": "lupobudgets.category",
+    "pk": 10,
+    "fields": {
+        "name": "Custom"
+    }
+},
+{
+    "model": "lupobudgets.category",
+    "pk": 9,
+    "fields": {
+        "name": "Bills + Utilities"
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 1,
+    "fields": {
+        "name": "Payslip",
+        "category": 1,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 2,
+    "fields": {
+        "name": "Investment Return",
+        "category": 1,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 3,
+    "fields": {
+        "name": "Bonus",
+        "category": 1,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 4,
+    "fields": {
+        "name": "Rental Income",
+        "category": 1,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 5,
+    "fields": {
+        "name": "Tips",
+        "category": 1,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 6,
+    "fields": {
+        "name": "Films",
+        "category": 2,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 7,
+    "fields": {
+        "name": "Music",
+        "category": 2,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 8,
+    "fields": {
+        "name": "Clothing",
+        "category": 2,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 9,
+    "fields": {
+        "name": "Games",
+        "category": 2,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 10,
+    "fields": {
+        "name": "Doctor / Dentist",
+        "category": 3,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 11,
+    "fields": {
+        "name": "Eye Care",
+        "category": 3,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 12,
+    "fields": {
+        "name": "Pharmacy",
+        "category": 3,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 13,
+    "fields": {
+        "name": "Health Insurance",
+        "category": 3,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 14,
+    "fields": {
+        "name": "Gym",
+        "category": 3,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 15,
+    "fields": {
+        "name": "Sport",
+        "category": 3,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 16,
+    "fields": {
+        "name": "Groceries",
+        "category": 4,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 17,
+    "fields": {
+        "name": "Restaurants + Cafés",
+        "category": 4,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 18,
+    "fields": {
+        "name": "Petrol",
+        "category": 5,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 19,
+    "fields": {
+        "name": "Parking",
+        "category": 5,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 20,
+    "fields": {
+        "name": "Service + Auto Parts",
+        "category": 5,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 21,
+    "fields": {
+        "name": "Auto Payment",
+        "category": 5,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 22,
+    "fields": {
+        "name": "Auto Insurance",
+        "category": 5,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 23,
+    "fields": {
+        "name": "Service Fee",
+        "category": 6,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 24,
+    "fields": {
+        "name": "ATM / Bank Fee",
+        "category": 6,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 25,
+    "fields": {
+        "name": "Council Tax",
+        "category": 7,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 26,
+    "fields": {
+        "name": "National Insurance",
+        "category": 7,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 27,
+    "fields": {
+        "name": "Property Tax",
+        "category": 7,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 28,
+    "fields": {
+        "name": "Federal / State Tax",
+        "category": 7,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 29,
+    "fields": {
+        "name": "Cash + ATM",
+        "category": 8,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 30,
+    "fields": {
+        "name": "Cheque",
+        "category": 8,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 31,
+    "fields": {
+        "name": "Laundry",
+        "category": 3,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 32,
+    "fields": {
+        "name": "Personal Care",
+        "category": 3,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 33,
+    "fields": {
+        "name": "Television",
+        "category": 9,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 34,
+    "fields": {
+        "name": "Broadband",
+        "category": 9,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 35,
+    "fields": {
+        "name": "Mobile Phone",
+        "category": 9,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 36,
+    "fields": {
+        "name": "Utilities",
+        "category": 9,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 37,
+    "fields": {
+        "name": "Air Travel",
+        "category": 5,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 38,
+    "fields": {
+        "name": "Hotel",
+        "category": 5,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 39,
+    "fields": {
+        "name": "Rental Car + Taxi",
+        "category": 5,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 40,
+    "fields": {
+        "name": "Holiday",
+        "category": 5,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 41,
+    "fields": {
+        "name": "Transfer",
+        "category": 8,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 42,
+    "fields": {
+        "name": "General",
+        "category": 8,
+        "user": null
+    }
+},
+{
+    "model": "lupobudgets.subcategory",
+    "pk": 43,
+    "fields": {
+        "name": "Savings",
+        "category": 8,
+        "user": null
+    }
+}
+]

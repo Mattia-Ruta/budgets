@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block title %}Transaction 1{% endblock %}
+{% block content %}
+
+<h2>Transaction 1</h2>
+<div class="divider"></div><br>
+<div id='map' style='height: 300px;' class="container"></div>
+<script>
+  mapboxgl.accessToken = "{{ MAPBOX_API_KEY }}";
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/outdoors-v10',
+    center: [-77.03, 38.91],
+    zoom: 9,
+  });
+
+  const marker = new mapboxgl.Marker({
+    color: "#FFFFFF",
+    draggable: false,
+  }).setLngLat([-77.03, 38.91])
+    .setPopup(new mapboxgl.Popup().setHTML("<p>Test Popup</p>"))
+    .addTo(map);
+</script>
+
+{% endblock %}

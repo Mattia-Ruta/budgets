@@ -1,0 +1,677 @@
+[
+{
+    "model": "lupobudgets.translation",
+    "pk": 1,
+    "fields": {
+        "key": "login",
+        "lang": "en",
+        "translation": "Login"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 2,
+    "fields": {
+        "key": "login",
+        "lang": "it",
+        "translation": "Accedi"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 3,
+    "fields": {
+        "key": "login",
+        "lang": "de",
+        "translation": "Anmelden"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 4,
+    "fields": {
+        "key": "logout",
+        "lang": "en",
+        "translation": "Logout"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 5,
+    "fields": {
+        "key": "logout",
+        "lang": "it",
+        "translation": "Esci"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 6,
+    "fields": {
+        "key": "username",
+        "lang": "en",
+        "translation": "Username"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 7,
+    "fields": {
+        "key": "password",
+        "lang": "en",
+        "translation": "Password"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 8,
+    "fields": {
+        "key": "password",
+        "lang": "it",
+        "translation": "Password"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 9,
+    "fields": {
+        "key": "signin",
+        "lang": "en",
+        "translation": "Sign In"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 10,
+    "fields": {
+        "key": "signin",
+        "lang": "it",
+        "translation": "Accedi"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 11,
+    "fields": {
+        "key": "signin",
+        "lang": "de",
+        "translation": "Anmelden"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 12,
+    "fields": {
+        "key": "invalidcredentials",
+        "lang": "en",
+        "translation": "Invalid Credentials"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 13,
+    "fields": {
+        "key": "registernewuser",
+        "lang": "en",
+        "translation": "Register New User"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 14,
+    "fields": {
+        "key": "passwordsdontmatch",
+        "lang": "en",
+        "translation": "Passwords don't match, please try again"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 15,
+    "fields": {
+        "key": "name",
+        "lang": "en",
+        "translation": "Name"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 16,
+    "fields": {
+        "key": "surname",
+        "lang": "en",
+        "translation": "Surname"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 17,
+    "fields": {
+        "key": "email",
+        "lang": "en",
+        "translation": "Email"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 18,
+    "fields": {
+        "key": "repassword",
+        "lang": "en",
+        "translation": "Re-Enter Password"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 19,
+    "fields": {
+        "key": "createaccount",
+        "lang": "en",
+        "translation": "Create Account"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 20,
+    "fields": {
+        "key": "forgotpassword",
+        "lang": "en",
+        "translation": "Forgot Password?"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 21,
+    "fields": {
+        "key": "forgotpassword",
+        "lang": "it",
+        "translation": "Hai dimenticato la password?"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 22,
+    "fields": {
+        "key": "accounttext",
+        "lang": "en",
+        "translation": "Account"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 23,
+    "fields": {
+        "key": "accounttext",
+        "lang": "it",
+        "translation": "Account"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 24,
+    "fields": {
+        "key": "accountinformation",
+        "lang": "en",
+        "translation": "Account Information"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 25,
+    "fields": {
+        "key": "home",
+        "lang": "en",
+        "translation": "Home"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 26,
+    "fields": {
+        "key": "home",
+        "lang": "it",
+        "translation": "Home"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 27,
+    "fields": {
+        "key": "overview",
+        "lang": "en",
+        "translation": "Overview"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 28,
+    "fields": {
+        "key": "category",
+        "lang": "en",
+        "translation": "Category"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 29,
+    "fields": {
+        "key": "categories",
+        "lang": "en",
+        "translation": "Categories"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 30,
+    "fields": {
+        "key": "transaction",
+        "lang": "en",
+        "translation": "Transaction"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 31,
+    "fields": {
+        "key": "transactions",
+        "lang": "en",
+        "translation": "Transactions"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 32,
+    "fields": {
+        "key": "footer",
+        "lang": "en",
+        "translation": "Mattia Ruta 2021-2023 | Powered by Python 3 using Django Framework |"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 33,
+    "fields": {
+        "key": "privacypolicy",
+        "lang": "en",
+        "translation": "Privacy Policy"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 34,
+    "fields": {
+        "key": "overview",
+        "lang": "it",
+        "translation": "Panoramica"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 35,
+    "fields": {
+        "key": "categories",
+        "lang": "it",
+        "translation": "Categorie"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 36,
+    "fields": {
+        "key": "transactions",
+        "lang": "it",
+        "translation": "Transazioni"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 37,
+    "fields": {
+        "key": "footer",
+        "lang": "it",
+        "translation": "Mattia Ruta 2021-2023 | Alimentato da Python 3 utilizzando Django Framework |"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 38,
+    "fields": {
+        "key": "privacypolicy",
+        "lang": "it",
+        "translation": "politica sulla riservatezza"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 39,
+    "fields": {
+        "key": "logout",
+        "lang": "de",
+        "translation": "Ausloggen"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 40,
+    "fields": {
+        "key": "overview",
+        "lang": "de",
+        "translation": "Überblick"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 41,
+    "fields": {
+        "key": "categories",
+        "lang": "de",
+        "translation": "Kategorien"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 42,
+    "fields": {
+        "key": "transactions",
+        "lang": "de",
+        "translation": "Transaktionen"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 43,
+    "fields": {
+        "key": "home",
+        "lang": "de",
+        "translation": "Heim"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 44,
+    "fields": {
+        "key": "footer",
+        "lang": "de",
+        "translation": "Mattia Ruta 2021-2023 | Unterstützt von Python 3 mit Django Framework |"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 45,
+    "fields": {
+        "key": "privacypolicy",
+        "lang": "de",
+        "translation": "Datenschutzrichtlinie"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 46,
+    "fields": {
+        "key": "login",
+        "lang": "eo",
+        "translation": "Ensaluti"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 47,
+    "fields": {
+        "key": "home",
+        "lang": "eo",
+        "translation": "Hejmo"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 48,
+    "fields": {
+        "key": "footer",
+        "lang": "eo",
+        "translation": "Mattia Ruta 2021-2023 | Funkciigita de Python 3 uzante Django Framework |"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 49,
+    "fields": {
+        "key": "privacypolicy",
+        "lang": "eo",
+        "translation": "Privateca Politiko"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 50,
+    "fields": {
+        "key": "login",
+        "lang": "pl",
+        "translation": "Zaloguj sie"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 51,
+    "fields": {
+        "key": "home",
+        "lang": "pl",
+        "translation": "Dom"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 52,
+    "fields": {
+        "key": "footer",
+        "lang": "pl",
+        "translation": "Mattia Ruta 2021-2023 | Obsługiwane przez Python 3 i Django Framework |"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 53,
+    "fields": {
+        "key": "privacypolicy",
+        "lang": "pl",
+        "translation": "Polityka prywatności"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 54,
+    "fields": {
+        "key": "invalidcredentials",
+        "lang": "de",
+        "translation": "Ungültige Anmeldeinformationen"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 55,
+    "fields": {
+        "key": "email",
+        "lang": "de",
+        "translation": "Email"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 56,
+    "fields": {
+        "key": "username",
+        "lang": "de",
+        "translation": "Nutzername"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 57,
+    "fields": {
+        "key": "password",
+        "lang": "de",
+        "translation": "Passwort"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 58,
+    "fields": {
+        "key": "forgotpassword",
+        "lang": "de",
+        "translation": "Passwort vergessen?"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 59,
+    "fields": {
+        "key": "invalidcredentials",
+        "lang": "it",
+        "translation": "Credenziali non valide"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 60,
+    "fields": {
+        "key": "email",
+        "lang": "it",
+        "translation": "E-mail"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 61,
+    "fields": {
+        "key": "username",
+        "lang": "it",
+        "translation": "Nome utente"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 62,
+    "fields": {
+        "key": "invalidcredentials",
+        "lang": "nl",
+        "translation": "Ongeldige inloggegevens"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 63,
+    "fields": {
+        "key": "email",
+        "lang": "nl",
+        "translation": "E-mail"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 64,
+    "fields": {
+        "key": "username",
+        "lang": "nl",
+        "translation": "Gebruikersnaam"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 65,
+    "fields": {
+        "key": "password",
+        "lang": "nl",
+        "translation": "Wachtwoord"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 66,
+    "fields": {
+        "key": "forgotpassword",
+        "lang": "nl",
+        "translation": "Wachtwoord vergeten?"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 67,
+    "fields": {
+        "key": "signin",
+        "lang": "nl",
+        "translation": "Aanmelden"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 68,
+    "fields": {
+        "key": "login",
+        "lang": "nl",
+        "translation": "Log in"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 69,
+    "fields": {
+        "key": "home",
+        "lang": "nl",
+        "translation": "Thuis"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 70,
+    "fields": {
+        "key": "footer",
+        "lang": "nl",
+        "translation": "Mattia Ruta 2021-2023 | Mogelijk gemaakt door Python 3 met behulp van Django Framework |"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 71,
+    "fields": {
+        "key": "privacypolicy",
+        "lang": "nl",
+        "translation": "Privacybeleid"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 72,
+    "fields": {
+        "key": "login",
+        "lang": "es",
+        "translation": "Acceso"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 73,
+    "fields": {
+        "key": "home",
+        "lang": "es",
+        "translation": "Hogar"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 74,
+    "fields": {
+        "key": "footer",
+        "lang": "es",
+        "translation": "Mattia Ruta 2021-2023 | Desarrollado por Python 3 usando Django Framework |"
+    }
+},
+{
+    "model": "lupobudgets.translation",
+    "pk": 75,
+    "fields": {
+        "key": "privacypolicy",
+        "lang": "es",
+        "translation": "política de privacidad"
+    }
+}
+]

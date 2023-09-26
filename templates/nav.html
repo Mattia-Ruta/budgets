@@ -1,0 +1,44 @@
+{% load static %}
+{% load i18n %}
+{% load translations %}
+{% get_current_language as locale %}
+
+
+<div class="nav-wrapper teal lighten-1">
+    <a href="#" data-target="menu-sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <a href="{% url 'index' %}" class="brand-logo">Lupo Budgets</a>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="#!" class="dropdown-trigger btn" data-target="navbar_lang_dropdown">{% get_language locale %}<i class="material-icons right">arrow_drop_down</i></a></li>
+        <ul id="navbar_lang_dropdown" class="dropdown-content">
+            {% get_available_languages as languages %}
+            {% for code, language in languages %}
+                {% if code|length == 2 %}
+                    <li><a href="/{{ code }}/{{ request.get_full_path|remove_code_from_path }}">{% get_language language %}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'registration:logout' %}">{% logout_text locale %}</a></li>
+        {% else %}
+        <li><a href="{% url 'registration:login' %}">{% login_text locale %}</a></li>
+        <li><a href="{% url 'registration:register' %}">Register</a></li>
+        {% endif %}
+    </ul>
+</div>
+
+{% if user.is_authenticated %}
+<div class="nav-content teal">
+    <ul class="tabs tabs-transparent tabs-fixed-width">
+        <li class="tab {% if request.path|get_first_path == '' %}active{% endif %}"><a class="black-text" href="{% url 'index' %}">{% overview locale %}</a></li>
+        <li class="tab {% if request.path|get_first_path == 'categories' %}active{% endif %}"><a class="black-text" href="{% url 'categories' %}">{% categories locale %}</a></li>
+        <li class="tab {% if request.path|get_first_path == 'transactions' %}active{% endif %}"><a class="black-text" href="#">{% transactions locale %}</a></li>
+    </ul>
+</div>
+{% endif %}
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".dropdown-trigger");
+        var instances = M.Dropdown.init(elems, {});
+    })
+</script>

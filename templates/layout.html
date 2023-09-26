@@ -1,0 +1,40 @@
+{% load i18n %}
+{% load translations %}
+{% get_current_language as locale %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    {% load static %}
+    <meta name="description" content="A basic budgeting site">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Lupo Budgets">
+    <meta property="og:type" content="HTML">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <div class="navbar-fixed"><nav class="nav-extended">{% include "nav.html" %}</nav></div>
+    <div>{% include "sidenav.html" %}</div><br><br>
+    <div class="container">{% block content %}{% endblock %}</div>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/mapbox.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/nav.js' %}"></script>
+</body>
+
+<footer class="page-footer teal lighten-1" style="position: fixed; left: 0; bottom: 0; width: 100%; text-align: center;">
+    <div class="footer-copyright">
+      <div class="container">
+      © {% footer_text locale %}<a href="#" class="white-text" style="text-decoration: underline;"> {% footer_privacy_policy locale %}</a>
+      </div>
+    </div>
+  </footer>
+</html>

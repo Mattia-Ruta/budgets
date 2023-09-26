@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block title %}{{ login }}{% endblock %}
+{% block content %}
+
+<h3>{{ login }}</h3>
+<div class="divider"></div><br>
+
+<div class="row">
+    <form action="{% url 'registration:login' %}" class="col s12" method="POST">
+        {% csrf_token %}
+        {% if msg %}
+            <div class="row">
+                <span class="red-text">{{ msg }}</span>
+            </div>
+        {% endif %}
+        <div class="row">
+            <div class="input-field col s6">
+                {{ form.username }}
+                {{ form.username.errors }}
+                <label for="id_username">{{ email_label }}</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                {{ form.password }}
+                {{ form.password.errors }}
+                <label for="id_password">{{ password_label }}</label>
+            </div>
+        </div>
+        <div class="row">
+            <a href="#">{{ forgotpassword }}</a>
+        </div>
+        <div class="row">
+            <button id="login-submit-btn" type="submit" class="btn waves-effect waves-light disabled">{{ signin_button_label }}</button>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        function checkInputs() {
+            let empty = true;
+            const loginBtn = $("#login-submit-btn");
+
+            $("input").each(function() {
+                empty = $(this).val().length == 0;
+            });
+
+            if (empty) loginBtn.addClass("disabled");
+            else loginBtn.removeClass("disabled");
+        }
+        $("input").on("input", checkInputs);
+        checkInputs();
+    });
+</script>
+
+{% endblock %}

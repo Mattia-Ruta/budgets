@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block title %}Lupo Budgets{% endblock %}
+{% block content %}
+{% load i18n %}
+{% load translations %}
+{% get_current_language as locale %}
+
+<div class="row">
+    {% if categories %}
+        {% for category in categories %}
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content center-align">
+                        <span class="card-title 
+                                {% if category.name == 'Income' %}
+                                    green-text lighten-4
+                                {% else %}
+                                    orange-text
+                                {% endif %}
+                            ">{{ category.name }}</span>
+                        <ul>
+                            {% for subcategory in subcategories_universal %}
+                                {% if subcategory.category == category %}
+                                    <li><a href="{% url 'categories' subcategory.pk %}">{{ subcategory.name }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="col s12 m6">
+            <p>No Categories found..</p>
+        </div>
+    {% endif %}
+</div>
+
+
+<!-- Progress bar for budgets -->
+<!-- <div class="container ">
+    <div class="row">
+        <div class="col s12"><br><br><br>
+            <div id="testProgressBar" style="width: 100%; background-color: grey;">
+                <div id="bar" style="width: 1%; height: 30px; background-color: red; line-height: 30px;"><p class="white-text">10%</p></div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<script type="text/javascript">
+    let i = 0;
+    if (i == 0) {
+        i = 1;
+        let elem = $("#bar");
+        let width = 1;
+        let id = setInterval(frame, 10);
+        let maxPercent = 75
+        function frame() {
+            if (width >= maxPercent) {
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                elem.css("width", width + "%");
+                elem.html(`<p class="white-text">${width} / 100</p>`);
+            }
+        }
+    }
+</script>
+
+{% endblock %}

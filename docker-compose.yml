@@ -1,0 +1,15 @@
+services:
+  db:
+    container_name: budgets.db
+    image: mariadb
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MARIADB_ROOT_PASSWORD: pydev101
+      MARIADB_USER: budgets
+      MARIADB_PASSWORD: budgets
+      MARIADB_DATABASE: budgets
+    volumes:
+      - ./db_backups:/var/backups
+    ports:
+      - 9002:3306

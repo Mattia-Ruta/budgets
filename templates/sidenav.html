@@ -1,0 +1,54 @@
+{% load i18n %}
+{% load translations %}
+{% get_current_language as locale %}
+
+<ul id="menu-sidenav" class="sidenav">
+    <li><a href="{% url 'index' %}">{% home locale %}</a></li>
+    {% if user.is_authenticated %}
+    <li><a href="#">{% overview locale %}</a></li>
+    <li><a href="#">{% categories locale %}</a></li>
+    <li><a href="#">{% transactions locale %}</a></li>
+    <li><a href="{% url 'registration:logout' %}">{% logout_text locale %}</a></li>
+    {% else %}
+    <li><a href="{% url 'registration:login' %}">{% login_text locale %}</a></li>
+    <li><a href="{% url 'registration:register' %}">Register</a></li>
+    {% endif %}
+    <li><a href="#!" class="dropdown-trigger" data-target="sidenav_lang_dropdown">{% get_language locale %}<i class="material-icons right">arrow_drop_down</i></a></li>
+        <ul id="sidenav_lang_dropdown" class="dropdown-content">
+            <li><a href="/ar">{% get_language "ar" %}</a></li>
+            <li><a href="/cs">{% get_language "cs" %}</a></li>
+            <li><a href="/cy">{% get_language "cy" %}</a></li>
+            <li><a href="/da">{% get_language "da" %}</a></li>
+            <li><a href="/de">{% get_language "de" %}</a></li>
+            <li><a href="/en">{% get_language "en" %}</a></li>
+            <li><a href="/eo">{% get_language "eo" %}</a></li>
+            <li><a href="/es">{% get_language "es" %}</a></li>
+            <li><a href="/fi">{% get_language "fi" %}</a></li>
+            <li><a href="/fr">{% get_language "fr" %}</a></li>
+            <li><a href="/gd">{% get_language "gd" %}</a></li>
+            <li><a href="/he">{% get_language "he" %}</a></li>
+            <li><a href="/is">{% get_language "is" %}</a></li>
+            <li><a href="/it">{% get_language "it" %}</a></li>
+            <li><a href="/ja">{% get_language "ja" %}</a></li>
+            <li><a href="/lt">{% get_language "lt" %}</a></li>
+            <li><a href="/mt">{% get_language "mt" %}</a></li>
+            <li><a href="/nl">{% get_language "nl" %}</a></li>
+            <li><a href="/no">{% get_language "no" %}</a></li>
+            <li><a href="/pl">{% get_language "pl" %}</a></li>
+            <li><a href="/pt">{% get_language "pt" %}</a></li>
+            <li><a href="/ru">{% get_language "ru" %}</a></li>
+            <li><a href="/sk">{% get_language "sk" %}</a></li>
+            <li><a href="/sv">{% get_language "sv" %}</a></li>
+            <li><a href="/ta">{% get_language "ta" %}</a></li>
+            <li><a href="/th">{% get_language "th" %}</a></li>
+            <li><a href="/uk">{% get_language "uk" %}</a></li>
+            <li><a href="/zh-hans">{% get_language "zh-hans" %}</a></li>
+        </ul>
+</ul>
+
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".dropdown-trigger");
+        var instances = M.Dropdown.init(elems, {});
+    })
+</script>
